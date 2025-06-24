@@ -20,7 +20,7 @@ src/sergey.njk
 
 ```bash
 git clone https://github.com/nikolasenko-web/logistic.git
-cd eleventy-builder
+cd logistic
 npm install
 npm run dev
 ```
