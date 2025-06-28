@@ -1,0 +1,64 @@
+
+<header x-data="{ mobileMenuOpen: false }" class="fixed top-0 left-0 right-0 bg-white z-50" role="banner">
+	<div class="h-[87px] px-4 xl:px-10  flex items-center justify-between" role="navigation" aria-label="Главная навигация">
+
+		<!-- Логотип -->
+		<a href="/" class=" flex gap-[6px] items-end" aria-label="На главную">
+			<img src="/assets/images/layout/logo-text.svg" alt="">
+			<img src="/assets/images/layout/logo-icon.svg" alt="">
+		</a>
+
+
+		<!-- Десктопное меню -->
+		<nav class="hidden lg:flex items-center space-x-10 ml-10" aria-label="Основное меню">
+			<a href="/" class="text-[#495057] hover:text-[#495057] focus:outline-none focus:ring focus:ring-blue" aria-current="page">Главная</a>
+			<a href="/services" class="text-[#495057] hover:text-[#495057] focus:outline-none focus:ring focus:ring-blue">Услуги</a>
+			<a href="#" class="text-[#495057] hover:text-[#495057] focus:outline-none focus:ring focus:ring-blue">Клиентам</a>
+			<a href="/contacts" class="text-[#495057] hover:text-[#495057] focus:outline-none focus:ring focus:ring-blue">Контакты</a>
+		</nav>
+
+		<!-- Иконки и кнопка -->
+		<div class="flex items-center  ml-auto">
+			<a href="https://t.me/yourlink" class=" mr-[10px] focus:outline-none focus:ring focus:ring-blue" target="_blank" aria-label="Наш Telegram канал" rel="noopener noreferrer">
+				<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M30 15.5C30 23.7843 23.2843 30.5 15 30.5C6.71573 30.5 0 23.7843 0 15.5C0 7.21573 6.71573 0.5 15 0.5C23.2843 0.5 30 7.21573 30 15.5ZM15.5375 11.5737C14.0786 12.1805 11.1627 13.4365 6.78987 15.3417C6.07979 15.624 5.70782 15.9003 5.67396 16.1704C5.61673 16.6269 6.18839 16.8066 6.96684 17.0514C7.07273 17.0847 7.18244 17.1192 7.29492 17.1558C8.0608 17.4047 9.09103 17.696 9.62661 17.7075C10.1124 17.718 10.6547 17.5177 11.2533 17.1067C15.3389 14.3488 17.448 12.9548 17.5804 12.9247C17.6738 12.9035 17.8032 12.8769 17.891 12.9548C17.9787 13.0328 17.97 13.1804 17.9608 13.22C17.9041 13.4614 15.6602 15.5476 14.4989 16.6272C14.1369 16.9638 13.8801 17.2025 13.8276 17.257C13.71 17.3792 13.5902 17.4947 13.475 17.6058C12.7635 18.2917 12.2299 18.806 13.5045 19.646C14.1171 20.0496 14.6072 20.3834 15.0962 20.7164C15.6302 21.0801 16.1629 21.4428 16.852 21.8946C17.0276 22.0097 17.1953 22.1292 17.3586 22.2457C17.9801 22.6887 18.5384 23.0868 19.2282 23.0233C19.6291 22.9864 20.0431 22.6095 20.2533 21.4854C20.7503 18.8289 21.727 13.0731 21.9528 10.7012C21.9726 10.4934 21.9477 10.2275 21.9277 10.1107C21.9077 9.99397 21.866 9.82763 21.7142 9.7045C21.5345 9.55867 21.257 9.52792 21.133 9.5301C20.5688 9.54004 19.7032 9.84102 15.5375 11.5737Z" fill="#495057" />
+				</svg>
+			</a>
+			<button aria-label="Открыть чат" class="focus:outline-none focus:ring focus:ring-blue">
+				<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect y="0.5" width="30" height="30" rx="15" fill="#495057" />
+					<g clip-path="url(#clip0_160187_1834)">
+						<path d="M15 21.5C18.3137 21.5 21 18.8137 21 15.5C21 12.1863 18.3137 9.5 15 9.5C11.6863 9.5 9 12.1863 9 15.5C9 16.4918 9.24062 17.4273 9.66667 18.2515L9 21.5L12.2485 20.8333C13.0727 21.2594 14.0082 21.5 15 21.5Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+						<rect x="12" y="15.5" width="0.00666667" height="0.00666667" stroke="white" stroke-width="2" stroke-linejoin="round" />
+						<rect x="15" y="15.5" width="0.00666667" height="0.00666667" stroke="white" stroke-width="2" stroke-linejoin="round" />
+						<rect x="18" y="15.5" width="0.00666667" height="0.00666667" stroke="white" stroke-width="2" stroke-linejoin="round" />
+					</g>
+					<defs>
+						<clipPath id="clip0_160187_1834">
+							<rect width="16" height="16" fill="white" transform="translate(7 7.5)" />
+						</clipPath>
+					</defs>
+				</svg>
+			</button>
+			<button @click="mobileMenuOpen = !mobileMenuOpen" :aria-expanded="mobileMenuOpen.toString()" aria-controls="mobile-menu" aria-label="Открыть мобильное меню" class="ml-5 lg:hidden">
+				<svg width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 1.5H32" stroke="#495057" stroke-width="3" stroke-linecap="round" />
+					<path d="M2 11.5H32" stroke="#495057" stroke-width="3" stroke-linecap="round" />
+					<path d="M2 21.5H32" stroke="#495057" stroke-width="3" stroke-linecap="round" />
+				</svg>
+			</button>
+			<a href="#appointment" class=" bg-blue text-white hover:bg-[#7991E8] ml-5 text-sm px-5 py-3 rounded-full  focus:outline-none focus:ring focus:ring-blue transition max-lg:hidden">Заказать звонок</a>
+		</div>
+
+	</div>
+
+	<!-- Мобильное меню -->
+	<div x-show="mobileMenuOpen" x-transition id="mobile-menu" @click.away="mobileMenuOpen = false" class="xl:hidden bg-white shadow-md">
+		<nav class="px-4 py-4 space-y-2" aria-label="Мобильное меню">
+			<a href="#services" class="block text-gray-700 hover:text-blue-600 focus:outline-none focus:ring focus:ring-blue">Услуги</a>
+			<a href="#about" class="block text-gray-700 hover:text-blue-600 focus:outline-none focus:ring focus:ring-blue">О нас</a>
+			<a href="#contact" class="block text-gray-700 hover:text-blue-600 focus:outline-none focus:ring focus:ring-blue">Контакты</a>
+			<a href="#appointment" class="mt-4 block w-full text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue">Записаться</a>
+		</nav>
+	</div>
+</header>
