@@ -12,33 +12,156 @@ layout: main.njk
 	</li>
 </ul>
 
-<section class="container  grid gap-[10px] xl:gap-5 grid-cols-1 xl:grid-cols-2 3xl:grid-cols-3 xl:custom-grid 3xl:custom-grid-xxxl ">
+<section class="container  grid gap-[10px] xl:gap-5 grid-cols-1 xl:grid-cols-2 3xl:grid-cols-3 xl:custom-grid 3xl:custom-grid-xxxl max-xl:px-4 3xl:max-w-[1200px] 2xl:max-w-[1100px] xl:max-w-[1000px]">
 
 
+	<!-- 1 -->
 
-	{% for i in range(1, 8) %}
-	<div class=" flex flex-col border border-[#6C757D] rounded-[20px] p-5  min-h-[219px]">
+	<div class=" flex flex-col border border-[#6C757D] rounded-[20px] p-5  min-h-[219px] hover:bg-blue *:hover:text-white group transition duration-300 hover:border-none">
 		<div class="flex max-xl:items-start items-center gap-[10px] mb-[30px] text-[#495057] font-medium text-[18px] xl:text-[22px] !leading-[118%]">
-			<svg class="flex-shrink-0 max-xl:w-6 max-xl:y-6" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<g clip-path="url(#clip0_2033_13397)">
-					<path d="M5 9.5H23V20.75C23 21.9926 21.9926 23 20.75 23H7.25C6.00736 23 5 21.9926 5 20.75V9.5Z" stroke="#6366F1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
-					<path d="M9.5 5H18.5L23 9.5H5L9.5 5Z" stroke="#6366F1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
-					<path d="M9.5 14H14" stroke="#6366F1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+			<svg class="flex-shrink-0 max-xl:w-6 max-xl:y-6 fill-white stroke-blue group-hover:fill-blue group-hover:stroke-white" width="27" height="27" viewBox="0 0 27 27" fill="" xmlns="http://www.w3.org/2000/svg">
+				<path d="M22.8243 21.8246L16.9335 16.0331M16.9335 16.0331C18.2515 14.7151 19.0668 12.8942 19.0668 10.883C19.0668 6.86049 15.8059 3.59961 11.7834 3.59961C7.76088 3.59961 4.5 6.86049 4.5 10.883C4.5 14.9055 7.76088 18.1664 11.7834 18.1664C13.7946 18.1664 15.6155 17.3511 16.9335 16.0331Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+
+			Поиск и поставка товаров
+		</div>
+		<div class="text-[#495057] text-sm xl:text-[18px] !leading-[118%]">
+			Находим проверенных поставщиков и организуем закупку необходимых товаров под ключ –– от запроса до доставки.
+		</div>
+		<a class="mt-auto font-medium text-base xl:text-[18px] text-[#4F75FF] underline" href="/service">Подробнее</a>
+	</div>
+
+	<!-- 2 -->
+
+	<div class=" flex flex-col border border-[#6C757D] rounded-[20px] p-5  min-h-[219px] hover:bg-blue *:hover:text-white group transition duration-300 hover:border-none">
+		<div class="flex max-xl:items-start items-center gap-[10px] mb-[30px] text-[#495057] font-medium text-[18px] xl:text-[22px] !leading-[118%]">
+			<svg class="flex-shrink-0 max-xl:w-6 max-xl:y-6 fill-white stroke-blue group-hover:fill-blue group-hover:stroke-white" width="27" height="27" viewBox="0 0 27 27" fill="" xmlns="http://www.w3.org/2000/svg">
+				<g clip-path="url(#clip0_2033_13460)">
+					<path d="M3.875 5V20.75C3.875 21.9926 4.88236 23 6.125 23H19.625H21.875C23.1176 23 24.125 21.9926 24.125 20.75V9.5H19.625" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M3.875 5H19.625V20.75C19.625 21.9926 20.6324 23 21.875 23V23" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M15.125 9.5L8.375 9.5" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M15.125 14L10.625 14" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 				</g>
 				<defs>
-					<clipPath id="clip0_2033_13397">
+					<clipPath id="clip0_2033_13460">
 						<rect width="27" height="27" fill="white" />
 					</clipPath>
 				</defs>
 			</svg>
+
+			Таможенное оформление
+		</div>
+		<div class="text-[#495057] text-sm xl:text-[18px] !leading-[118%]">
+			Проводим полное таможенное оформление грузов –– готовим документы, обеспечиваем быструю и легальную растаможку
+		</div>
+		<a class="mt-auto font-medium text-base xl:text-[18px] text-[#4F75FF] underline" href="/service">Подробнее</a>
+	</div>
+
+	<!-- 3 -->
+
+	<div class=" flex flex-col border border-[#6C757D] rounded-[20px] p-5  min-h-[219px] hover:bg-blue *:hover:text-white group transition duration-300 hover:border-none">
+		<div class="flex max-xl:items-start items-center gap-[10px] mb-[30px] text-[#495057] font-medium text-[18px] xl:text-[22px] !leading-[118%]">
+			<svg class="flex-shrink-0 max-xl:w-6 max-xl:y-6 fill-white stroke-blue group-hover:fill-blue group-hover:stroke-white" width="27" height="27" viewBox="0 0 27 27" fill="" xmlns="http://www.w3.org/2000/svg">
+				<path d="M4.5 19.6875L3.375 13.5L13.5 10.125L23.625 13.5L22.5 19.6875M5.625 12.75V7.875C5.625 6.63236 6.63236 5.625 7.875 5.625H19.125C20.3676 5.625 21.375 6.63236 21.375 7.875V12.75M11.25 5.625V3.375C11.25 2.75368 11.7537 2.25 12.375 2.25H14.625C15.2463 2.25 15.75 2.75368 15.75 3.375V5.625M2.25 23.625C3.375 24.75 6.75 24.75 9 22.5C11.25 24.75 15.75 24.75 18 22.5C20.25 24.75 23.625 24.75 24.75 23.625" stroke="" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+
+			Перевозка промышленных грузов
+		</div>
+		<div class="text-[#495057] text-sm xl:text-[18px] !leading-[118%]">
+			Осуществляем доставку тяжелых и негабаритных промышленных грузов с соблюдением всех требований.
+		</div>
+		<a class="mt-auto font-medium text-base xl:text-[18px] text-[#4F75FF] underline" href="/service">Подробнее</a>
+	</div>
+
+	<!-- 4 -->
+
+	<div class=" flex flex-col border border-[#6C757D] rounded-[20px] p-5  min-h-[219px] hover:bg-blue *:hover:text-white group transition duration-300 hover:border-none">
+		<div class="flex max-xl:items-start items-center gap-[10px] mb-[30px] text-[#495057] font-medium text-[18px] xl:text-[22px] !leading-[118%]">
+			<svg class="flex-shrink-0 max-xl:w-6 max-xl:y-6 fill-white stroke-blue group-hover:fill-blue group-hover:stroke-white" width="27" height="27" viewBox="0 0 27 27" fill="" xmlns="http://www.w3.org/2000/svg">
+				<path d="M10.6875 6.1875V9.40454C10.6875 9.50347 10.639 9.5961 10.5576 9.65241L4.16103 14.0808C3.66875 14.4216 3.375 14.9823 3.375 15.581C3.375 16.7933 4.5353 17.6685 5.7009 17.3355L10.875 15.8571C11.0629 15.8034 11.25 15.9446 11.25 16.14V18.7056C11.25 18.8893 11.25 18.9811 11.2225 19.0658C11.2134 19.0939 11.2021 19.1211 11.1887 19.1474C11.1482 19.2268 11.0833 19.2917 10.9534 19.4216L9.29655 21.0784C9.16669 21.2083 9.10176 21.2732 9.06131 21.3526C9.04793 21.3789 9.03664 21.4061 9.02753 21.4342C9 21.5189 9 21.6107 9 21.7944V22.3607C9 23.0721 9 23.4278 9.192 23.5959C9.25232 23.6487 9.32321 23.6879 9.39995 23.7111C9.64424 23.7849 9.94587 23.5963 10.5491 23.2193L12.9634 21.7104C13.1946 21.5659 13.3103 21.4936 13.4373 21.4793C13.479 21.4747 13.521 21.4747 13.5627 21.4793C13.6897 21.4936 13.8054 21.5658 14.0366 21.7104L14.0366 21.7104L16.4509 23.2193C17.0541 23.5963 17.3558 23.7849 17.6 23.7111C17.6768 23.6879 17.7477 23.6487 17.808 23.5959C18 23.4278 18 23.0721 18 22.3607V21.7944C18 21.6107 18 21.5189 17.9725 21.4342C17.9634 21.4061 17.9521 21.3789 17.9387 21.3526C17.8982 21.2732 17.8333 21.2083 17.7034 21.0784L16.0466 19.4216C15.9167 19.2917 15.8518 19.2268 15.8113 19.1474C15.7979 19.1211 15.7866 19.0939 15.7775 19.0658C15.75 18.9811 15.75 18.8893 15.75 18.7056V16.14C15.75 15.9446 15.9371 15.8034 16.125 15.8571L21.2991 17.3355C22.4647 17.6685 23.625 16.7933 23.625 15.581C23.625 14.9823 23.3312 14.4216 22.839 14.0808L16.4424 9.65241C16.361 9.5961 16.3125 9.50347 16.3125 9.40454V6.1875C16.3125 4.6342 15.0533 3.375 13.5 3.375C11.9467 3.375 10.6875 4.6342 10.6875 6.1875Z" stroke="" stroke-width="2" stroke-linejoin="round" />
+			</svg>
+
+			Авиаперевозка
+		</div>
+		<div class="text-[#495057] text-sm xl:text-[18px] !leading-[118%]">
+			Быстрая доставка грузов по воздуху в любую точку мира — оптимально для срочных и ценных отправлений.
+		</div>
+		<a class="mt-auto font-medium text-base xl:text-[18px] text-[#4F75FF] underline" href="/service">Подробнее</a>
+	</div>
+
+	<!-- 5 -->
+
+	<div class=" flex flex-col border border-[#6C757D] rounded-[20px] p-5  min-h-[219px] hover:bg-blue *:hover:text-white group transition duration-300 hover:border-none">
+		<div class="flex max-xl:items-start items-center gap-[10px] mb-[30px] text-[#495057] font-medium text-[18px] xl:text-[22px] !leading-[118%]">
+			<svg class="flex-shrink-0 max-xl:w-6 max-xl:y-6 fill-white stroke-blue group-hover:fill-blue group-hover:stroke-white" width="27" height="27" viewBox="0 0 27 27" fill="" xmlns="http://www.w3.org/2000/svg">
+				<path d="M16.875 6.75V23.625M16.875 6.75L23.625 3.375V20.25L16.875 23.625M16.875 6.75L10.125 3.375M16.875 23.625L10.125 20.25M10.125 20.25L3.375 23.625V6.75L10.125 3.375M10.125 20.25V3.375" stroke="" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+
+			Перевозка товаров по РФ
+		</div>
+		<div class="text-[#495057] text-sm xl:text-[18px] !leading-[118%]">
+			Организуем надежную и оперативную доставку грузов по всей территории России различными видами транспорта.
+		</div>
+		<a class="mt-auto font-medium text-base xl:text-[18px] text-[#4F75FF] underline" href="/service">Подробнее</a>
+	</div>
+
+	<!-- 6 -->
+
+	<div class=" flex flex-col border border-[#6C757D] rounded-[20px] p-5  min-h-[219px] hover:bg-blue *:hover:text-white group transition duration-300 hover:border-none">
+		<div class="flex max-xl:items-start items-center gap-[10px] mb-[30px] text-[#495057] font-medium text-[18px] xl:text-[22px] !leading-[118%]">
+			<svg class="flex-shrink-0 max-xl:w-6 max-xl:y-6 fill-white stroke-blue group-hover:fill-blue group-hover:stroke-white" width="27" height="27" viewBox="0 0 27 27" fill="" xmlns="http://www.w3.org/2000/svg">
+				<path d="M3.375 13.5H9M3.375 13.5C3.375 19.0919 7.90812 23.625 13.5 23.625M3.375 13.5C3.375 7.90812 7.90812 3.375 13.5 3.375M9 13.5H18M9 13.5C9 19.0919 11.0147 23.625 13.5 23.625M9 13.5C9 7.90812 11.0147 3.375 13.5 3.375M18 13.5H23.625M18 13.5C18 7.90812 15.9853 3.375 13.5 3.375M18 13.5C18 19.0919 15.9853 23.625 13.5 23.625M23.625 13.5C23.625 7.90812 19.0919 3.375 13.5 3.375M23.625 13.5C23.625 19.0919 19.0919 23.625 13.5 23.625"
+				 stroke="" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			
+
+
+			Мультимодальные перевозки
+		</div>
+		<div class="text-[#495057] text-sm xl:text-[18px] !leading-[118%]">
+			Разрабатываем логистические маршруты с использованием разных видов транспорта для эффективной доставки из сложных регионов.
+		</div>
+		<a class="mt-auto font-medium text-base xl:text-[18px] text-[#4F75FF] underline" href="/service">Подробнее</a>
+	</div>
+
+	<!-- 7 -->
+
+	<div class=" flex flex-col border border-[#6C757D] rounded-[20px] p-5  min-h-[219px] hover:bg-blue *:hover:text-white group transition duration-300 hover:border-none">
+		<div class="flex max-xl:items-start items-center gap-[10px] mb-[30px] text-[#495057] font-medium text-[18px] xl:text-[22px] !leading-[118%]">
+			<svg class="flex-shrink-0 max-xl:w-6 max-xl:y-6 fill-white stroke-blue group-hover:fill-blue group-hover:stroke-white" width="27" height="27" viewBox="0 0 27 27" fill="" xmlns="http://www.w3.org/2000/svg">
+				<g clip-path="url(#clip0_2033_13397)">
+					<path d="M5 9.5H23V20.75C23 21.9926 21.9926 23 20.75 23H7.25C6.00736 23 5 21.9926 5 20.75V9.5Z" stroke="" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M9.5 5H18.5L23 9.5H5L9.5 5Z" stroke="" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M9.5 14H14" stroke="" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+				</g>
+				<defs>
+					<clipPath id="clip0_2033_13397">
+						<rect width="27" height="27" fill="" />
+					</clipPath>
+				</defs>
+			</svg>
+		
+
+
+
+
 			Ответственное хранение и консолидация в Китае
 		</div>
 		<div class="text-[#495057] text-sm xl:text-[18px] !leading-[118%]">
 			Предоставляем склады в Китае для хранения и консолидации товаров перед отправкой, обеспечивая их безопасность и контроль.
 		</div>
-		<a class="mt-auto font-medium text-base xl:text-[18px] text-[#4F75FF] underline" href="">Подробнее</a>
+		<a class="mt-auto font-medium text-base xl:text-[18px] text-[#4F75FF] underline" href="/service">Подробнее</a>
 	</div>
-	{% endfor %}
+
+
+
+
 
 </section>
 
+
+<section class=" container 2xl:max-w-[900px] mt-10 xl:mt-20 max-xl:px-4 xl:max-w-[740px]">
+	<div class=" font-semibold text-[30px] xl:text-[40px] mb-5 text-[#495057] !leading-[118%]">Оставьте заявку –– мы подберем оптимальное решение</div>
+	{% include "src/sections/layouts/form.njk" %}
+
+</section>

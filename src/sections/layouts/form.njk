@@ -1,0 +1,32 @@
+<form class=" px-5 py-10 bg-[#EFF3F8] rounded-[20px] border border-[#E6EBEE]" aria-label="Форма обратной связи">
+	<!-- Имя -->
+	<div>
+		<label for="name" class="sr-only">
+			Ваше имя
+		</label>
+		<input type="text" id="name" name="name" required autocomplete="name" aria-required="true" class="text-base xl:text-[18px] text-[#495057] !leading-[118%] mt-[10px] block w-full rounded-[12px] border border-[#E0E7FF]  p-5 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 placeholder:text-[#495057]" placeholder="Ваше имя" />
+	</div>
+
+	<!-- Email -->
+	<div>
+		<label for="email" class="sr-only">
+			E-mail
+		</label>
+		<input type="email" id="email" name="email" required autocomplete="email" aria-required="true" class="text-base xl:text-[18px] text-[#495057] !leading-[118%] mt-[10px] block w-full rounded-[12px] border border-[#E0E7FF]  p-5 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 placeholder:text-[#495057]" placeholder="Email" />
+	</div>
+
+	<!-- Сообщение -->
+	<div>
+		<label for="message" class="sr-only">
+			Сообщение
+		</label>
+		<textarea id="message" name="message" rows="5" required aria-required="true" class="text-base xl:text-[18px] text-[#495057] !leading-[118%] mt-[10px] block w-full rounded-[12px] border border-[#E0E7FF]  p-5 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 placeholder:text-[#495057]" placeholder="Сообщение"></textarea>
+	</div>
+
+	<!-- Кнопка отправки -->
+	<div>
+		<button type="submit" class="inline-flex items-center justify-center mt-[30px] w-full px-4 py-3 text-sm font-medium text-white rounded-md bg-blue hover:bg-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" aria-label="Отправить сообщение">
+			Отправить
+		</button>
+	</div>
+</form>
