@@ -1,7 +1,7 @@
 <section class=" bg-blue ">
 	<div class="container max-xl:px-4 py-10 max-w-[772px] xl:max-w-[900px] 2xl:max-w-[1060px]">
-		<div class=" text-white ">Грузы доступные для перевозки</div>
-		<div class=" text-white ">Найдите подходящие парт-карго грузы для вашего судна</div>
+		<div class=" text-white font-semibold text-[32px] xl:text-[40px]  text-center ">Грузы доступные для перевозки</div>
+		<div class=" text-white   text-center xl:text-xl mb-10 ">Найдите подходящие парт-карго грузы для вашего судна</div>
 		<div class=" bg-[#E6EBEE] rounded-3xl w-full px-5 py-10 space-y-[10px]">
 			<div class="grid gap-[10px] grid-cols-1 xl:grid-cols-2">
 
@@ -32,3 +32,47 @@
 		</div>
 	</div>
 </section>
+
+<script>
+	function citySearch() {
+		return {
+			query: '',
+			cities: [
+				'Москва', 'Санкт-Петербург', 'Новосибирск', 'Екатеринбург', 'Казань',
+				'Нижний Новгород', 'Челябинск', 'Самара', 'Омск', 'Ростов-на-Дону'
+			],
+			filtered: [],
+			open: false,
+			highlight: 0,
+
+			filterCities() {
+				this.filtered = this.query
+					? this.cities.filter(c =>
+						c.toLowerCase().includes(this.query.toLowerCase())
+					)
+					: this.cities;
+				this.open = this.filtered.length > 0;
+				this.highlight = 0;
+			},
+
+			showAllCities() {
+				this.filtered = this.cities;
+				this.open = true;
+				this.highlight = 0;
+			},
+
+			selectCity() {
+				if (this.filtered.length > 0) {
+					this.query = this.filtered[this.highlight];
+					this.open = false;
+				}
+			},
+
+			selectCityFromList(city) {
+				this.query = city;
+				this.open = false;
+			},
+
+		};
+	}
+</script>

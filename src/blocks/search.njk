@@ -1,4 +1,4 @@
-<div x-data="citySearch()" class="relative w-full flex flex-col gap-[10px]  col-span-2 "  @click.away="open = false" >
+<div x-data="citySearch()" class="relative w-full flex flex-col gap-[10px] xl:col-span-2 "  @click.away="open = false" >
 
 	<div class=" relative ">
 		<input class="w-full bg-white rounded-xl border border-gray-300 px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300 h-16 placeholder:text-[#495057] " x-model="query" x-on:input="filterCities" x-on:focus="showAllCities" x-on:keydown.arrow-down.prevent="highlightNext" x-on:keydown.arrow-up.prevent="highlightPrev" x-on:keydown.enter.prevent="selectCity" id="city-search" type="text" placeholder="Место отправки" autocomplete="off" role="combobox" aria-autocomplete="list" aria-controls="city-listbox" :aria-expanded="open.toString()" aria-haspopup="listbox" aria-activedescendant="activeDescendant" />
@@ -36,46 +36,3 @@
 	</div>
 </div>
 
-<script>
-	function citySearch() {
-		return {
-			query: '',
-			cities: [
-				'Москва', 'Санкт-Петербург', 'Новосибирск', 'Екатеринбург', 'Казань',
-				'Нижний Новгород', 'Челябинск', 'Самара', 'Омск', 'Ростов-на-Дону'
-			],
-			filtered: [],
-			open: false,
-			highlight: 0,
-
-			filterCities() {
-				this.filtered = this.query
-					? this.cities.filter(c =>
-						c.toLowerCase().includes(this.query.toLowerCase())
-					)
-					: this.cities;
-				this.open = this.filtered.length > 0;
-				this.highlight = 0;
-			},
-
-			showAllCities() {
-				this.filtered = this.cities;
-				this.open = true;
-				this.highlight = 0;
-			},
-
-			selectCity() {
-				if (this.filtered.length > 0) {
-					this.query = this.filtered[this.highlight];
-					this.open = false;
-				}
-			},
-
-			selectCityFromList(city) {
-				this.query = city;
-				this.open = false;
-			},
-
-		};
-	}
-</script>

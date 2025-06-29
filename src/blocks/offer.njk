@@ -1,0 +1,78 @@
+<div class=" bg-[#EFF3F8] relative">
+	{# Title #}
+	<div class="flex text-[28px] xl:text-[36px] items-center">
+		<div class="">Москва</div>
+
+		<svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M18.4404 7.32095C18.7859 6.97542 18.7859 6.41521 18.4404 6.06968L12.8097 0.438977C12.4641 0.0934487 11.9039 0.0934487 11.5584 0.438977C11.2129 0.784504 11.2129 1.34472 11.5584 1.69024L16.5635 6.69531L11.5584 11.7004C11.2129 12.0459 11.2129 12.6061 11.5584 12.9516C11.9039 13.2972 12.4641 13.2972 12.8097 12.9516L18.4404 7.32095ZM0.119141 6.69531L0.119141 7.58009L17.8147 7.58009V6.69531V5.81053L0.119141 5.81053L0.119141 6.69531Z" fill="#495057" />
+		</svg>
+
+		<div class="">Владивосток</div>
+	</div>
+	{# Title #}
+
+	{# Form #}
+	<div class="">
+		<div class=" flex items-center">27 мая
+			<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M7.67756 11.9995L6.69318 11.0279L10.7457 6.97532H0.25V5.56907H10.7457L6.69318 1.5293L7.67756 0.544922L13.4048 6.2722L7.67756 11.9995Z" fill="#6C757D" />
+			</svg>
+			19 Июня
+		</div>
+
+		<fieldset class="">
+			<legend class="sr-only">Выберите тару</legend>
+			<div class="flex flex-wrap gap-x-[10px] gap-y-1 text-[10px] xl:text-lg " role="radiogroup" aria-labelledby="tara-label">
+				{% set name = 'tara' %}
+				{% set values = ['20 футов', '40 футов', '70 футов'] %}
+				{% for item in values %}
+				{% include "src/components/radio.njk" %}
+				{% endfor %}
+			</div>
+		</fieldset>
+
+		<fieldset class="">
+			<legend class="sr-only">Выберите тару</legend>
+			<div class="flex flex-wrap gap-x-[10px] gap-y-1 text-[10px] xl:text-lg " role="radiogroup" aria-labelledby="tara-label">
+				{% set name = 'own' %}
+				{% set values = ['Своя тара', 'Тара перевозчика'] %}
+				{% for item in values %}
+				{% include "src/components/radio.njk" %}
+				{% endfor %}
+			</div>
+		</fieldset>
+	</div>
+	{# Form #}
+
+	{# Info #}
+	<div class=" xl:absolute xl:right-0 xl:top-0">
+		<div class="">от 95 000₽</div>
+		<div class="">ООО «ТрансГруз»</div>
+	</div>
+	{# Info #}
+
+	<div class=" xl:flex justify-between items-center">
+
+
+
+		<div class="flex w-full justify-between">
+			{% set cityList = ['Москва', 'Екатеринбург', 'Новосибирск', 'Иркутск', 'Владивосток'] %}
+			{% for city in cityList %}
+			<div class=" flex-1 group ">
+				<div class="relative">
+					<div class=" bg-red-300 h-6 block  text-sm w-6 rounded-full z-10 relative ">
+						{{ loop.index }}
+					</div>
+					<div class=" w-[calc(100%+4px)] bg-green-200 h-1 absolute left-0 top-1/2 -translate-y-1/2 group-last:hidden z-0"></div>
+				</div>
+
+				{{ city }}
+			</div>
+			{% endfor %}
+		</div>
+
+		<div class="btn btn--blue w-[252px] text-center">Подробнее</div>
+
+	</div>
+
+</div>

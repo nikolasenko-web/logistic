@@ -1,0 +1,6 @@
+<label class="cursor-pointer">
+	<input {% if loop.first %}checked{% endif %} type="radio" name="{{ name }}" value="{{ item }}" class="sr-only peer" />
+	<span class="block p-[10px] leading-[120%] rounded-lg  bg-white text-[#6C757D] peer-checked:bg-blue peer-checked:text-white">
+		{{ item }}  
+	</span>
+</label>
