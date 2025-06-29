@@ -11,21 +11,18 @@
 
 				{% include "src/blocks/search.njk" %}
 
-				<div class="bg-white h-[64px] rounded-[12px]">
-					Тип собственности
-				</div>
+				{% set name = 'Тип собственности' %}
+				{% set values = ['20 футов', '40 футов', '70 футов'] %}
+				{% include "src/components/dropdown.njk" %}
 
-				<div class="bg-white h-[64px] rounded-[12px]">
-					Оборудование
-				</div>
+				{% set name = 'Оборудование' %}
+				{% set values = ['20 футов', '40 футов', '70 футов'] %}
+				{% include "src/components/dropdown.njk" %}
 
-				<div class="bg-white h-[64px] rounded-[12px]">
-					Дата готовности груза
-				</div>
+				{% set name = 'Рейс' %}
+				{% set values = ['20 футов', '40 футов', '70 футов'] %}
+				{% include "src/components/dropdown.njk" %}
 
-				<div class="bg-white h-[64px] rounded-[12px]">
-					Рейс
-				</div>
 
 			</div>
 			<button class="bg-[#4F75FF] text-white rounded-lg w-full border-none p-5 font-semibold">Найти перевозку</button>

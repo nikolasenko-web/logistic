@@ -1,0 +1,67 @@
+<section class="mt-10 container max-xl:px-4 py-10 max-w-[1000px] ">
+	<div class="">Лучшие ставки популярных маршрутов</div>
+
+	<div class="">
+		<div class="">Китай → Россия</div>
+		<div class=" grid grid-cols-1 xl:grid-cols-2 ">
+			{% set name = 'Владивосток' %}
+			{% set values = ['Шанхай', 'Нинбо', 'Харбин', 'Гуанчжоу'] %}
+			{% for item in values %}
+
+			<div class=" bg-white rounded-[20px] border border-[#6C757D]">
+
+				{# Title #}
+				<div class=" flex items-center">
+
+					{# From #}
+					<div class="flex items-center">
+						<div class="w-8 h-6 rounded-[3px] bg-red-200 ">
+						</div>
+						{{ item }}
+					</div>
+					{# From #}
+					<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M9.53906 14.7891L8.13281 13.3984L13.0156 8.51562H0.75V6.48437H13.0156L8.13281 1.60938L9.53906 0.210937L16.8281 7.5L9.53906 14.7891Z" fill="#495057" />
+					</svg>
+
+					{# To #}
+					<div class="flex items-center">
+						{{ name }}
+						<div class="w-8 h-6 rounded-[3px] bg-red-200 ">
+						</div>
+					</div>
+					{# To #}
+
+				</div>
+				{# Title #}
+
+				{# Info #}
+				<div class="flex">
+					<div class="">От 75.000₽</div>
+					<div class="">/от 19 дней</div>
+				</div>
+				{# Info #}
+
+				{# Radio #}
+				<form>
+					<fieldset class="">
+						<legend class="sr-only">Выберите тару</legend>
+						<div class="flex flex-wrap gap-x-[10px] gap-y-1 text-[10px] xl:text-lg " role="radiogroup" aria-labelledby="tara-label">
+							{% set radioName = 'tara' %}
+							{% set values = ['20 футов', '40 футов', '70 футов'] %}
+							{% for item in values %}
+							{% include "src/components/radio.njk" %}
+							{% endfor %}
+						</div>
+					</fieldset>
+				</form>
+				{# Radio #}
+
+				<a class="mt-auto font-medium text-base xl:text-[18px] text-[#4F75FF] underline" href="#">Подробнее</a>
+
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+
+</section>
