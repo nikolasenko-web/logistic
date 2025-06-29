@@ -1,23 +1,31 @@
-<section class="mt-10 container max-xl:px-4 py-10 max-w-[1000px] ">
-	<div class="">Лучшие ставки популярных маршрутов</div>
+<section class="mt-10 xl:mt-[60px] container max-xl:px-4 py-10 xl:max-w-[1000px] 2xl:max-w-[1300px] 3xl:max-w-[1400px]">
+	<div class="text-[32px] xl:text-[40px] font-semibold text-[#495057] text-center">Лучшие ставки популярных маршрутов</div>
 
-	<div class="">
-		<div class="">Китай → Россия</div>
-		<div class=" grid grid-cols-1 xl:grid-cols-2 ">
+	<div class="mt-10">
+		<div class="font-medium text-[32px] xl:text-[50px] text-[#495057] flex items-center gap-[8px]">Китай
+			<span><svg class="max-xl:w-6" width="37" height="34" viewBox="0 0 37 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M20.3726 33.657L17.1766 30.4964L28.2739 19.3991H0.397461V14.7827H28.2739L17.1766 3.70312L20.3726 0.524856L36.9387 17.0909L20.3726 33.657Z" fill="#495057" />
+				</svg>
+			</span> Россия
+		</div>
+		<div class="grid grid-cols-1 mt-5 xl:mt-10 xl:grid-cols-2 3xl:grid-cols-3 gap-[10px] xl:gap-5">
 			{% set name = 'Владивосток' %}
 			{% set values = ['Шанхай', 'Нинбо', 'Харбин', 'Гуанчжоу'] %}
 			{% for item in values %}
 
-			<div class=" bg-white rounded-[20px] border border-[#6C757D]">
+			<div class="px-5 py-[22px] xl:py-[38px] bg-white rounded-[20px] border border-[#6C757D]">
 
 				{# Title #}
-				<div class=" flex items-center">
+				<div class="flex items-center gap-1">
 
 					{# From #}
-					<div class="flex items-center">
+					<div class="flex items-center gap-[10px]">
 						<div class="w-8 h-6 rounded-[3px] bg-red-200 ">
 						</div>
-						{{ item }}
+						<div class=" text-[18px] xl:text-[22px] text-[#495057] font-medium">
+							{{ item }}
+						</div>
+
 					</div>
 					{# From #}
 					<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,8 +33,11 @@
 					</svg>
 
 					{# To #}
-					<div class="flex items-center">
-						{{ name }}
+					<div class="flex items-center gap-[10px]">
+						<div class="text-[18px] xl:text-[22px] text-[#495057] font-medium">
+							{{ name }}
+						</div>
+
 						<div class="w-8 h-6 rounded-[3px] bg-red-200 ">
 						</div>
 					</div>
@@ -36,9 +47,9 @@
 				{# Title #}
 
 				{# Info #}
-				<div class="flex">
-					<div class="">От 75.000₽</div>
-					<div class="">/от 19 дней</div>
+				<div class="flex items-end mt-5">
+					<div class="text-[28px] xl:text-[30px] font-medium text-[#495057]">От 75.000₽</div>
+					<div class="font-medium text-[#8F8F8F]">/от 19 дней</div>
 				</div>
 				{# Info #}
 
@@ -46,7 +57,7 @@
 				<form>
 					<fieldset class="">
 						<legend class="sr-only">Выберите тару</legend>
-						<div class="flex flex-wrap gap-x-[10px] gap-y-1 text-[10px] xl:text-lg " role="radiogroup" aria-labelledby="tara-label">
+						<div class="flex flex-wrap gap-x-[10px] gap-y-1 mt-5 max-xl:mb-5 text-[10px] xl:text-lg " role="radiogroup" aria-labelledby="tara-label">
 							{% set radioName = 'tara' %}
 							{% set values = ['20 футов', '40 футов', '70 футов'] %}
 							{% for item in values %}
