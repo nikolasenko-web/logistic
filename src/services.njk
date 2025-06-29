@@ -12,28 +12,33 @@ layout: main.njk
 	</li>
 </ul>
 
-<section class="container">
-	<div class="border border-[#6C757D] rounded-[20px] p-5  h-[219px] max-w-[358px] xl:max-w-[1000px] 2xl:max-w-[1100px] 3xl:max-w-[1200px]">
+<section class="container  grid gap-[10px] xl:gap-5 grid-cols-1 xl:grid-cols-2 3xl:grid-cols-3 xl:custom-grid 3xl:custom-grid-xxxl ">
+
+
+
+	{% for i in range(1, 8) %}
+	<div class=" flex flex-col border border-[#6C757D] rounded-[20px] p-5  min-h-[219px]">
 		<div class="flex max-xl:items-start items-center gap-[10px] mb-[30px] text-[#495057] font-medium text-[18px] xl:text-[22px] !leading-[118%]">
 			<svg class="flex-shrink-0 max-xl:w-6 max-xl:y-6" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<g clip-path="url(#clip0_2033_13397)">
-			<path d="M5 9.5H23V20.75C23 21.9926 21.9926 23 20.75 23H7.25C6.00736 23 5 21.9926 5 20.75V9.5Z" stroke="#6366F1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-			<path d="M9.5 5H18.5L23 9.5H5L9.5 5Z" stroke="#6366F1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-			<path d="M9.5 14H14" stroke="#6366F1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-			</g>
-			<defs>
-			<clipPath id="clip0_2033_13397">
-			<rect width="27" height="27" fill="white"/>
-			</clipPath>
-			</defs>
+				<g clip-path="url(#clip0_2033_13397)">
+					<path d="M5 9.5H23V20.75C23 21.9926 21.9926 23 20.75 23H7.25C6.00736 23 5 21.9926 5 20.75V9.5Z" stroke="#6366F1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M9.5 5H18.5L23 9.5H5L9.5 5Z" stroke="#6366F1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M9.5 14H14" stroke="#6366F1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+				</g>
+				<defs>
+					<clipPath id="clip0_2033_13397">
+						<rect width="27" height="27" fill="white" />
+					</clipPath>
+				</defs>
 			</svg>
-		Ответственное хранение и консолидация в Китае
+			Ответственное хранение и консолидация в Китае
 		</div>
 		<div class="text-[#495057] text-sm xl:text-[18px] !leading-[118%]">
 			Предоставляем склады в Китае для хранения и консолидации товаров перед отправкой, обеспечивая их безопасность и контроль.
 		</div>
 		<a class="mt-auto font-medium text-base xl:text-[18px] text-[#4F75FF] underline" href="">Подробнее</a>
 	</div>
-	
+	{% endfor %}
 
 </section>
+
